@@ -1,0 +1,149 @@
+Thu Nov 23 2023 09:33:56 GMT+0530 (India Standard Time)
+PUT    => /remove_item_fromCart - 6 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","increment":true}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'statusCode')
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Thu Nov 23 2023 09:34:32 GMT+0530 (India Standard Time)
+PUT    => /update_item_fromCart - 1 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","increment":true}
+query: {}
+params: {}
+error: ReferenceError: findData is not defined
+    at exports.updateItemFromCart (D:\programing\Node\taskProject\src\api\cart\controllers.js:70:3)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Thu Nov 23 2023 10:55:28 GMT+0530 (India Standard Time)
+POST   => /pay_order - 3 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+error: ReferenceError: mongoose is not defined
+    at exports.payOrder (D:\programing\Node\taskProject\src\api\order\controllers.js:5:21)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Thu Nov 23 2023 10:56:11 GMT+0530 (India Standard Time)
+POST   => /pay_order - 3 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+error: ReferenceError: req is not defined
+    at exports.payOrder (D:\programing\Node\taskProject\src\api\order\controllers.js:6:48)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Thu Nov 23 2023 10:56:46 GMT+0530 (India Standard Time)
+POST   => /pay_order - 3 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+    at exports.payOrder (D:\programing\Node\taskProject\src\api\order\controllers.js:6:36)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Thu Nov 23 2023 10:57:00 GMT+0530 (India Standard Time)
+POST   => /pay_order - 4 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+error: ReferenceError: cart is not defined
+    at exports.payOrder (D:\programing\Node\taskProject\src\api\order\controllers.js:16:24)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Thu Nov 23 2023 10:57:52 GMT+0530 (India Standard Time)
+POST   => /pay_order - 3 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+error: ReferenceError: cart is not defined
+    at exports.payOrder (D:\programing\Node\taskProject\src\api\order\controllers.js:17:24)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Thu Nov 23 2023 10:58:49 GMT+0530 (India Standard Time)
+POST   => /pay_order - 11 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+error: ReferenceError: addressCollection is not defined
+    at exports.payOrder (D:\programing\Node\taskProject\src\api\order\controllers.js:20:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Thu Nov 23 2023 11:30:09 GMT+0530 (India Standard Time)
+POST   => /pay_order - 20 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":1500}
+query: {}
+params: {}
+error: TypeError: model.updateMany is not a function
+    at exports.updateMany (D:\programing\Node\taskProject\src\utils\dbOperations.js:18:18)
+    at exports.payOrder (D:\programing\Node\taskProject\src\api\order\controllers.js:27:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Thu Nov 23 2023 13:17:38 GMT+0530 (India Standard Time)
+POST   => /login_admin - 89 ms
+user: {}
+body: {"email":"admin@gmail.com","password":"1"}
+query: {}
+params: {}
+error: ReferenceError: JWT_SECRET is not defined
+    at exports.loginAdmin (D:\programing\Node\taskProject\src\admin\admin\controllers.js:58:52)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Thu Nov 23 2023 13:46:21 GMT+0530 (India Standard Time)
+GET    => /get_all_user - 6 ms
+user: {"_id":"655f0371085a4626deeb036b","name":"admin","email":"admin@gmail.com","password":"$2a$10$hSBcl4ldPMnOeM8k7ppTpebAdEd/zwT.rbImkwOiIY13EY.HovGXW","isDeleted":false,"createdAt":"2023-11-23T07:46:57.461Z","updatedAt":"2023-11-23T07:48:49.101Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVmMDM3MTA4NWE0NjI2ZGVlYjAzNmIiLCJpYXQiOjE3MDA3MjU3Mjl9.XoG5e8XoCSjLlGEaJ0psR4c4jZuQkOj2SC28uTCo3yQ"}
+body: {}
+query: {}
+params: {}
+error: TypeError: Cannot convert undefined or null to object
+    at exports.getUser (D:\programing\Node\taskProject\src\admin\user Manager\controllers.js:7:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+

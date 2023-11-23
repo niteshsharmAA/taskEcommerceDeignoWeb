@@ -1,0 +1,540 @@
+Wed Nov 22 2023 11:04:47 GMT+0530 (India Standard Time)
+POST   => /register_user - 112 ms
+user: {}
+body: {"name":"sunil","phone":"8947027673","password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G"}
+query: {}
+params: {}
+response: {"status":true,"message":"Register Successfully","data":"8947027673"}
+
+
+Wed Nov 22 2023 11:05:09 GMT+0530 (India Standard Time)
+POST   => /register_user - 6 ms
+user: {}
+body: {"name":"sunil","phone":"8947027673","password":"1"}
+query: {}
+params: {}
+response: {"status":false,"message":"Number Already Exist","data":{}}
+
+
+Wed Nov 22 2023 11:06:44 GMT+0530 (India Standard Time)
+POST   => /login_user - 88 ms
+user: {}
+body: {"phone":"8947027673","password":"1"}
+query: {}
+params: {}
+response: {"status":true,"message":"Login Successfully","data":{"checkUser":{"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T05:36:44.133Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2MzE0MDR9.xRtYS3sfvrjsOUbaGH3CJLnxoeajpcH7TF27w-nwfRY"}}}
+
+
+Wed Nov 22 2023 13:11:28 GMT+0530 (India Standard Time)
+POST   => /add_category - 42 ms
+user: {}
+body: {"name":"Clothes"}
+query: {}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":{"name":"Clothes"}}
+
+
+Wed Nov 22 2023 13:12:10 GMT+0530 (India Standard Time)
+POST   => /add_category - 11 ms
+user: {}
+body: {"name":"Clothes","category":"655db0a85344a61e39f3b34"}
+query: {}
+params: {}
+response: {"statuscode":400,"status":false,"message":"Category Name Already Exist","data":{}}
+
+
+Wed Nov 22 2023 13:12:56 GMT+0530 (India Standard Time)
+POST   => /add_category - 4 ms
+user: {}
+body: {"name":"Top","category":"655db0a85344a61e39f3b347"}
+query: {}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":{"name":"Top","category":"655db0a85344a61e39f3b347"}}
+
+
+Wed Nov 22 2023 13:13:07 GMT+0530 (India Standard Time)
+POST   => /add_category - 4 ms
+user: {}
+body: {"name":"Bottom","category":"655db0a85344a61e39f3b347"}
+query: {}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":{"name":"Bottom","category":"655db0a85344a61e39f3b347"}}
+
+
+Wed Nov 22 2023 13:13:30 GMT+0530 (India Standard Time)
+POST   => /add_category - 7 ms
+user: {}
+body: {"name":"Shirt","category":"655db1005344a61e39f3b34d"}
+query: {}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":{"name":"Shirt","category":"655db1005344a61e39f3b34d"}}
+
+
+Wed Nov 22 2023 13:13:38 GMT+0530 (India Standard Time)
+POST   => /add_category - 10 ms
+user: {}
+body: {"name":"T-Shirt","category":"655db1005344a61e39f3b34d"}
+query: {}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":{"name":"T-Shirt","category":"655db1005344a61e39f3b34d"}}
+
+
+Wed Nov 22 2023 13:13:57 GMT+0530 (India Standard Time)
+POST   => /add_category - 2 ms
+user: {}
+body: {"name":"T-Shirt","category":"655db10b5344a61e39f3b350"}
+query: {}
+params: {}
+response: {"statuscode":400,"status":false,"message":"Category Name Already Exist","data":{}}
+
+
+Wed Nov 22 2023 13:53:47 GMT+0530 (India Standard Time)
+GET    => /get_category?category=655db1005344a61e39f3b34d - 45 ms
+user: {}
+body: {}
+query: {"category":"655db1005344a61e39f3b34d"}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":[{"_id":"655db1225344a61e39f3b353","name":"Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0},{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 13:53:58 GMT+0530 (India Standard Time)
+GET    => /get_category - 14 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":[{"_id":"655db0a85344a61e39f3b347","name":"Clothes","category":null,"isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 14:19:14 GMT+0530 (India Standard Time)
+GET    => /get_category?category=655db1005344a61e39f3b34d - 33 ms
+user: {}
+body: {}
+query: {"category":"655db1005344a61e39f3b34d"}
+params: {}
+response: {"statuscode":200,"status":true,"message":"Category Added Successfuly","data":[{"_id":"655db1225344a61e39f3b353","name":"Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0},{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 14:40:05 GMT+0530 (India Standard Time)
+POST   => /add_product - 16 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700644205506-575061657f3.jpg"}
+query: {}
+params: {}
+response: {"status":true,"message":"Data","data":{"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700644205506-575061657f3.jpg"}}
+
+
+Wed Nov 22 2023 14:55:51 GMT+0530 (India Standard Time)
+POST   => /add_product - 39 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700645151235-595883787f3.jpg"}
+query: {}
+params: {}
+response: {"status":true,"message":"Data","data":{"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700645151235-595883787f3.jpg"}}
+
+
+Wed Nov 22 2023 14:56:00 GMT+0530 (India Standard Time)
+POST   => /add_product - 9 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b351","image":"image-1700645160651-545473418f3.jpg"}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Categoery","data":{"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b351","image":"image-1700645160651-545473418f3.jpg"}}
+
+
+Wed Nov 22 2023 14:56:23 GMT+0530 (India Standard Time)
+POST   => /add_product - 20 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b351","image":"image-1700645183593-584419556f3.jpg"}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Categoery","data":{}}
+
+
+Wed Nov 22 2023 15:12:06 GMT+0530 (India Standard Time)
+POST   => /add_product - 35 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b351","image":"image-1700646126614-15276405f3.jpg"}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Categoery","data":{}}
+
+
+Wed Nov 22 2023 15:12:13 GMT+0530 (India Standard Time)
+POST   => /add_product - 20 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700646133535-818187779f3.jpg"}
+query: {}
+params: {}
+response: {"status":true,"message":"Data","data":{"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700646133535-818187779f3.jpg"}}
+
+
+Wed Nov 22 2023 15:14:27 GMT+0530 (India Standard Time)
+POST   => /add_product - 7 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700646267460-849063164f3.jpg"}
+query: {}
+params: {}
+response: {"status":true,"message":"Data","data":{"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700646267460-849063164f3.jpg"}}
+
+
+Wed Nov 22 2023 15:17:53 GMT+0530 (India Standard Time)
+GET    => /get_product - 19 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"http://localhost:6200/uploads/Product/image-1700646267460-849063164f3.jpg","price":"2000","category":"T-Shirt"}]}
+
+
+Wed Nov 22 2023 15:35:38 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 26 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Product","data":{}}
+
+
+Wed Nov 22 2023 15:36:35 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 3 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Product","data":{}}
+
+
+Wed Nov 22 2023 15:36:43 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 2 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Product","data":{}}
+
+
+Wed Nov 22 2023 15:37:19 GMT+0530 (India Standard Time)
+GET    => /get_product - 15 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"http://localhost:6200/uploads/Product/image-1700646267460-849063164f3.jpg","price":"2000","category":"T-Shirt"}]}
+
+
+Wed Nov 22 2023 15:37:32 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 4 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Product","data":{}}
+
+
+Wed Nov 22 2023 15:37:54 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 2 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Product","data":{}}
+
+
+Wed Nov 22 2023 15:39:39 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 38 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Product","data":{}}
+
+
+Wed Nov 22 2023 15:40:52 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 33 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Found This Product","data":{}}
+
+
+Wed Nov 22 2023 15:41:52 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 37 ms
+user: {}
+body: {"id":"655dcd7be2ecf51b7c5e8ab2","price":"1500","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700647912500-733766256f2.jpg"}
+query: {}
+params: {}
+response: {"status":true,"message":"Product Updated Successfully","data":{"id":"655dcd7be2ecf51b7c5e8ab2","price":"1500","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700647912500-733766256f2.jpg"}}
+
+
+Wed Nov 22 2023 15:44:17 GMT+0530 (India Standard Time)
+GET    => /get_product - 6 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"http://localhost:6200/uploads/Product/image-1700647912500-733766256f2.jpg","price":"1500","category":"T-Shirt"}]}
+
+
+Wed Nov 22 2023 15:45:21 GMT+0530 (India Standard Time)
+PUT    => /edit_product - 61 ms
+user: {}
+body: {"id":"655dcd7be2ecf51b7c5e8ab2","price":"1500","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700648121533-897592640f2.jpg"}
+query: {}
+params: {}
+response: {"status":true,"message":"Product Updated Successfully","data":{"id":"655dcd7be2ecf51b7c5e8ab2","price":"1500","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700648121533-897592640f2.jpg"}}
+
+
+Wed Nov 22 2023 15:47:13 GMT+0530 (India Standard Time)
+PUT    => /delete_product - 48 ms
+user: {}
+body: {"id":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+response: {"status":true,"message":"Product Deleted Successfully","data":{"id":"655dcd7be2ecf51b7c5e8ab2"}}
+
+
+Wed Nov 22 2023 15:47:18 GMT+0530 (India Standard Time)
+GET    => /get_product - 6 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"product List","data":[]}
+
+
+Wed Nov 22 2023 16:59:30 GMT+0530 (India Standard Time)
+POST   => /login_user - 116 ms
+user: {}
+body: {"phone":"8947027673","password":"1"}
+query: {}
+params: {}
+response: {"status":true,"message":"Login Successfully","data":{"checkUser":{"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}}}
+
+
+Wed Nov 22 2023 16:59:50 GMT+0530 (India Standard Time)
+GET    => /product_list - 2 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[]}
+
+
+Wed Nov 22 2023 17:00:16 GMT+0530 (India Standard Time)
+GET    => /product_list - 2 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[]}
+
+
+Wed Nov 22 2023 17:00:33 GMT+0530 (India Standard Time)
+GET    => /product_list - 6 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[]}
+
+
+Wed Nov 22 2023 17:00:50 GMT+0530 (India Standard Time)
+GET    => /product_list - 11 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[]}
+
+
+Wed Nov 22 2023 17:17:53 GMT+0530 (India Standard Time)
+GET    => /product_list - 26 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[{"_id":"655db0a85344a61e39f3b347","name":"Clothes","category":null,"isDeleted":false,"__v":0,"subcategory":[{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0,"subcategory":[{"_id":"655db1225344a61e39f3b353","name":"Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"subcategory":[]},{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"subcategory":[]}]},{"_id":"655db10b5344a61e39f3b350","name":"Bottom","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0,"subcategory":[]}]}]}
+
+
+Wed Nov 22 2023 17:25:28 GMT+0530 (India Standard Time)
+GET    => /get_product - 19 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"http://localhost:6200/uploads/Product/image-1700648121533-897592640f2.jpg","price":"1500","category":"T-Shirt"}]}
+
+
+Wed Nov 22 2023 17:30:47 GMT+0530 (India Standard Time)
+GET    => /category_list - 7 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Category List","data":[{"_id":"655db0a85344a61e39f3b347","name":"Clothes","category":null,"isDeleted":false,"__v":0,"subcategory":[{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0,"subcategory":[{"_id":"655db1225344a61e39f3b353","name":"Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"subcategory":[]},{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"subcategory":[]}]},{"_id":"655db10b5344a61e39f3b350","name":"Bottom","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0,"subcategory":[]}]}]}
+
+
+Wed Nov 22 2023 17:40:06 GMT+0530 (India Standard Time)
+GET    => /product_list - 18 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Category List","data":[{"_id":"655db0a85344a61e39f3b347","name":"Clothes","category":null,"isDeleted":false,"__v":0,"subcategory":[]},{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0,"subcategory":[]},{"_id":"655db10b5344a61e39f3b350","name":"Bottom","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0,"subcategory":[]},{"_id":"655db1225344a61e39f3b353","name":"Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"subcategory":[]},{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"subcategory":[]}]}
+
+
+Wed Nov 22 2023 17:56:49 GMT+0530 (India Standard Time)
+GET    => /product_list - 6 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"image-1700648121533-897592640f2.jpg","price":"1500","category":{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"sub":[{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0}]},"isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 17:59:58 GMT+0530 (India Standard Time)
+GET    => /product_list - 16 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[]}
+
+
+Wed Nov 22 2023 18:00:27 GMT+0530 (India Standard Time)
+GET    => /product_list?category=655db12a5344a61e39f3b356 - 4 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {"category":"655db12a5344a61e39f3b356"}
+params: {}
+response: {"status":200,"message":"Product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"image-1700648121533-897592640f2.jpg","price":"1500","category":{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"sub":[{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0}]},"isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 18:00:33 GMT+0530 (India Standard Time)
+GET    => /product_list - 2 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[]}
+
+
+Wed Nov 22 2023 18:01:29 GMT+0530 (India Standard Time)
+GET    => /product_list - 7 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"image-1700648121533-897592640f2.jpg","price":"1500","category":{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"sub":[{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0}]},"isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 18:01:41 GMT+0530 (India Standard Time)
+GET    => /product_list?category=655db12a5344a61e39f3b356 - 9 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {"category":"655db12a5344a61e39f3b356"}
+params: {}
+response: {"status":200,"message":"Product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"image-1700648121533-897592640f2.jpg","price":"1500","category":{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"sub":[{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0}]},"isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 18:19:09 GMT+0530 (India Standard Time)
+POST   => /add_to_cart - 6 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+response: {"status":false,"message":"cant Find Product","data":{}}
+
+
+Wed Nov 22 2023 18:23:12 GMT+0530 (India Standard Time)
+POST   => /add_to_cart - 38 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","price":"1500","quantity":1,"userId":"655d92f7359aec52a40568be"}
+query: {}
+params: {}
+response: {"status":200,"message":"Category List","data":[{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":1,"userId":"655d92f7359aec52a40568be","isDeleted":false,"__v":0}]}
+
+
+Wed Nov 22 2023 18:31:57 GMT+0530 (India Standard Time)
+POST   => /add_to_cart - 15 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+response: {"status":false,"message":"Product are already in cart","data":{}}
+
+
+Wed Nov 22 2023 18:32:21 GMT+0530 (India Standard Time)
+GET    => /cart_item - 8 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"Category List","data":[]}
+
+
+Wed Nov 22 2023 18:32:46 GMT+0530 (India Standard Time)
+GET    => /cart_item - 7 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[],"total":0}}
+
+
+Wed Nov 22 2023 18:34:43 GMT+0530 (India Standard Time)
+GET    => /cart_item - 7 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[],"total":0}}
+
+
+Wed Nov 22 2023 18:35:12 GMT+0530 (India Standard Time)
+GET    => /cart_item - 9 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[],"total":0}}
+
+
+Wed Nov 22 2023 18:37:13 GMT+0530 (India Standard Time)
+GET    => /cart_item - 49 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[],"total":0}}
+
+
+Wed Nov 22 2023 18:37:28 GMT+0530 (India Standard Time)
+GET    => /cart_item - 9 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[],"total":0}}
+
+
+Wed Nov 22 2023 18:37:50 GMT+0530 (India Standard Time)
+GET    => /cart_item - 15 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":1,"userId":"655d92f7359aec52a40568be","name":"Polo","image":"http://localhost:6200/uploads/Product/image-1700648121533-897592640f2.jpg"}],"total":1500}}
+
+
+Wed Nov 22 2023 18:46:44 GMT+0530 (India Standard Time)
+GET    => /product_list - 24 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"Product List","data":[{"_id":"655dcd7be2ecf51b7c5e8ab2","productName":"Polo","image":"image-1700648121533-897592640f2.jpg","price":"1500","category":{"_id":"655db12a5344a61e39f3b356","name":"T-Shirt","category":"655db1005344a61e39f3b34d","isDeleted":false,"__v":0,"sub":[{"_id":"655db1005344a61e39f3b34d","name":"Top","category":"655db0a85344a61e39f3b347","isDeleted":false,"__v":0}]},"isDeleted":false,"__v":0}]}
+
+

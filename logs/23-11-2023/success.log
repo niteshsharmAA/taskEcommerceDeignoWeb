@@ -1,0 +1,216 @@
+Thu Nov 23 2023 09:35:32 GMT+0530 (India Standard Time)
+PUT    => /update_item_fromCart - 25 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","increment":true}
+query: {}
+params: {}
+response: {"status":200,"message":"Item Quantity Increase Successfully","data":{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":2,"userId":"655d92f7359aec52a40568be","isDeleted":false,"__v":0}}
+
+
+Thu Nov 23 2023 09:35:36 GMT+0530 (India Standard Time)
+PUT    => /update_item_fromCart - 12 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","increment":true}
+query: {}
+params: {}
+response: {"status":200,"message":"Item Quantity Increase Successfully","data":{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":3,"userId":"655d92f7359aec52a40568be","isDeleted":false,"__v":0}}
+
+
+Thu Nov 23 2023 09:35:37 GMT+0530 (India Standard Time)
+PUT    => /update_item_fromCart - 7 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","increment":true}
+query: {}
+params: {}
+response: {"status":200,"message":"Item Quantity Increase Successfully","data":{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":4,"userId":"655d92f7359aec52a40568be","isDeleted":false,"__v":0}}
+
+
+Thu Nov 23 2023 09:35:44 GMT+0530 (India Standard Time)
+PUT    => /update_item_fromCart - 20 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","increment":false}
+query: {}
+params: {}
+response: {"status":200,"message":"Item Quantity Decrease Successfully","data":{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":3,"userId":"655d92f7359aec52a40568be","isDeleted":false,"__v":0}}
+
+
+Thu Nov 23 2023 09:35:46 GMT+0530 (India Standard Time)
+PUT    => /update_item_fromCart - 19 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","increment":false}
+query: {}
+params: {}
+response: {"status":200,"message":"Item Quantity Decrease Successfully","data":{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":2,"userId":"655d92f7359aec52a40568be","isDeleted":false,"__v":0}}
+
+
+Thu Nov 23 2023 09:37:10 GMT+0530 (India Standard Time)
+GET    => /cart_item - 7 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":2,"userId":"655d92f7359aec52a40568be","name":"Polo","image":"http://localhost:6200/uploads/Product/image-1700648121533-897592640f2.jpg"}],"total":3000}}
+
+
+Thu Nov 23 2023 09:40:12 GMT+0530 (India Standard Time)
+PUT    => /remove_item_fromCart - 20 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+response: {"status":true,"message":"Item Remove From Cart SuccessFully","data":{}}
+
+
+Thu Nov 23 2023 09:40:20 GMT+0530 (India Standard Time)
+GET    => /cart_item - 15 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+response: {"status":200,"message":"cart item","data":{"data":[],"total":0}}
+
+
+Thu Nov 23 2023 09:40:36 GMT+0530 (India Standard Time)
+PUT    => /remove_item_fromCart - 5 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+response: {"status":false,"message":"Not Fount This Item in Cart","data":{}}
+
+
+Thu Nov 23 2023 10:20:08 GMT+0530 (India Standard Time)
+POST   => /add_address - 12 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"state":"Rajasthan","country":"india","pincode":"232121","address":"wqwsa asdas","name":"sunil","phone":8947027673,"userId":"655d92f7359aec52a40568be"}
+query: {}
+params: {}
+response: {"status":true,"message":"Address Added Successfully","data":{"state":"Rajasthan","country":"india","pincode":"232121","address":"wqwsa asdas","name":"sunil","phone":8947027673,"userId":"655d92f7359aec52a40568be"}}
+
+
+Thu Nov 23 2023 10:59:35 GMT+0530 (India Standard Time)
+POST   => /pay_order - 25 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+response: {"status":true,"message":"Order Succssefuly","data":{"userId":"655d92f7359aec52a40568be","product":[{"_id":"655df9b8b93a2122296bb35e","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":2,"isDeleted":false,"__v":0}],"addressId":"655eda00427c4ac3a2cb6988","total":244,"orderId":"6402596717","orderDate":"2023-11-23T05:29:35.827Z","paymentStatus":"pending","isDeleted":false,"_id":"655ee33fc79e0154926e9264","__v":0}}
+
+
+Thu Nov 23 2023 11:07:39 GMT+0530 (India Standard Time)
+POST   => /pay_order - 7 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":244}
+query: {}
+params: {}
+response: {"status":false,"message":"No product found to order","data":{}}
+
+
+Thu Nov 23 2023 11:29:57 GMT+0530 (India Standard Time)
+POST   => /add_to_cart - 61 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2","price":"1500","quantity":1,"userId":"655d92f7359aec52a40568be"}
+query: {}
+params: {}
+response: {"status":200,"message":"Category List","data":[{"_id":"655eea5dfa26ed8d99c54703","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":1,"userId":"655d92f7359aec52a40568be","isDeleted":false,"__v":0}]}
+
+
+Thu Nov 23 2023 11:31:02 GMT+0530 (India Standard Time)
+POST   => /pay_order - 29 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":1500}
+query: {}
+params: {}
+response: {"status":true,"message":"Order Succssefuly","data":{"userId":"655d92f7359aec52a40568be","product":[{"_id":"655eea5dfa26ed8d99c54703","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":1,"isDeleted":false,"__v":0}],"addressId":"655eda00427c4ac3a2cb6988","total":1500,"orderId":"86985899","orderDate":"2023-11-23T06:01:02.334Z","paymentStatus":"pending","isDeleted":false,"_id":"655eea9e0a535e8e13189ff9","__v":0}}
+
+
+Thu Nov 23 2023 11:31:43 GMT+0530 (India Standard Time)
+POST   => /pay_order - 14 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"finalprice":1500}
+query: {}
+params: {}
+response: {"status":false,"message":"No product found to order","data":{}}
+
+
+Thu Nov 23 2023 12:13:48 GMT+0530 (India Standard Time)
+GET    => /order_list - 36 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"order List","data":[]}
+
+
+Thu Nov 23 2023 12:14:21 GMT+0530 (India Standard Time)
+GET    => /order_list - 63 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"order List","data":[]}
+
+
+Thu Nov 23 2023 12:14:59 GMT+0530 (India Standard Time)
+GET    => /order_list - 18 ms
+user: {}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"order List","data":[{"_id":"655eea9e0a535e8e13189ff9","total":1500,"orderId":"86985899","paymentStatus":"pending","name":"sunil","phone":8947027673,"orderDate":"2023-11-23"}]}
+
+
+Thu Nov 23 2023 12:26:45 GMT+0530 (India Standard Time)
+GET    => /order_product?orderId=86985899 - 19 ms
+user: {}
+body: {}
+query: {"orderId":"86985899"}
+params: {}
+response: {"status":true,"message":"order List","data":[{"_id":"655eea9e0a535e8e13189ff9","Name":"Polo","image":"http://localhost:6200/uploads/Product/image-1700648121533-897592640f2.jpg","price":"1500","quantity":1}]}
+
+
+Thu Nov 23 2023 13:02:13 GMT+0530 (India Standard Time)
+PUT    => /payment_status?orderId=86985899 - 41 ms
+user: {}
+body: {}
+query: {"orderId":"86985899"}
+params: {}
+response: {"status":true,"message":"payment approve","data":{"_id":"655eea9e0a535e8e13189ff9","userId":"655d92f7359aec52a40568be","product":[{"_id":"655eea5dfa26ed8d99c54703","itemId":"655dcd7be2ecf51b7c5e8ab2","price":1500,"quantity":1,"isDeleted":false,"__v":0}],"addressId":"655eda00427c4ac3a2cb6988","total":1500,"orderId":"86985899","orderDate":"2023-11-23T06:01:02.334Z","paymentStatus":"paid","isDeleted":false,"__v":0}}
+
+
+Thu Nov 23 2023 13:16:57 GMT+0530 (India Standard Time)
+POST   => /register_admin - 257 ms
+user: {}
+body: {"name":"admin","email":"admin@gmail.com","password":"$2a$10$hSBcl4ldPMnOeM8k7ppTpebAdEd/zwT.rbImkwOiIY13EY.HovGXW"}
+query: {}
+params: {}
+response: {"status":true,"message":"Register Successfully","data":"admin@gmail.com"}
+
+
+Thu Nov 23 2023 13:18:49 GMT+0530 (India Standard Time)
+POST   => /login_admin - 138 ms
+user: {}
+body: {"email":"admin@gmail.com","password":"1"}
+query: {}
+params: {}
+response: {"status":true,"message":"Login Successfully","data":{"checkUser":{"_id":"655f0371085a4626deeb036b","name":"admin","email":"admin@gmail.com","isDeleted":false,"createdAt":"2023-11-23T07:46:57.461Z","updatedAt":"2023-11-23T07:48:49.101Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVmMDM3MTA4NWE0NjI2ZGVlYjAzNmIiLCJpYXQiOjE3MDA3MjU3Mjl9.XoG5e8XoCSjLlGEaJ0psR4c4jZuQkOj2SC28uTCo3yQ"}}}
+
+
+Thu Nov 23 2023 13:29:53 GMT+0530 (India Standard Time)
+GET    => /get_all_user - 12 ms
+user: {"_id":"655f0371085a4626deeb036b","name":"admin","email":"admin@gmail.com","password":"$2a$10$hSBcl4ldPMnOeM8k7ppTpebAdEd/zwT.rbImkwOiIY13EY.HovGXW","isDeleted":false,"createdAt":"2023-11-23T07:46:57.461Z","updatedAt":"2023-11-23T07:48:49.101Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVmMDM3MTA4NWE0NjI2ZGVlYjAzNmIiLCJpYXQiOjE3MDA3MjU3Mjl9.XoG5e8XoCSjLlGEaJ0psR4c4jZuQkOj2SC28uTCo3yQ"}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"User List","data":[{"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}]}
+
+
+Thu Nov 23 2023 13:47:43 GMT+0530 (India Standard Time)
+GET    => /get_all_user - 7 ms
+user: {"_id":"655f0371085a4626deeb036b","name":"admin","email":"admin@gmail.com","password":"$2a$10$hSBcl4ldPMnOeM8k7ppTpebAdEd/zwT.rbImkwOiIY13EY.HovGXW","isDeleted":false,"createdAt":"2023-11-23T07:46:57.461Z","updatedAt":"2023-11-23T07:48:49.101Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVmMDM3MTA4NWE0NjI2ZGVlYjAzNmIiLCJpYXQiOjE3MDA3MjU3Mjl9.XoG5e8XoCSjLlGEaJ0psR4c4jZuQkOj2SC28uTCo3yQ"}
+body: {}
+query: {}
+params: {}
+response: {"status":true,"message":"User List","data":[{"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z"}]}
+
+

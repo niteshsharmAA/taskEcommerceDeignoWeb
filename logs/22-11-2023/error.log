@@ -1,0 +1,235 @@
+Wed Nov 22 2023 13:12:23 GMT+0530 (India Standard Time)
+POST   => /add_category - 8 ms
+user: {}
+body: {"name":"Top","category":"655db0a85344a61e39f3b34"}
+query: {}
+params: {}
+error: ValidationError: category validation failed: category: Cast to ObjectId failed for value "655db0a85344a61e39f3b34" (type string) at path "category" because of "BSONError"
+    at Document.invalidate (D:\programing\Node\taskProject\node_modules\mongoose\lib\document.js:3174:32)
+    at model.$set (D:\programing\Node\taskProject\node_modules\mongoose\lib\document.js:1454:12)
+    at model.$set (D:\programing\Node\taskProject\node_modules\mongoose\lib\document.js:1114:16)
+    at model.Document (D:\programing\Node\taskProject\node_modules\mongoose\lib\document.js:165:12)
+    at model.Model (D:\programing\Node\taskProject\node_modules\mongoose\lib\model.js:125:12)
+    at new model (D:\programing\Node\taskProject\node_modules\mongoose\lib\model.js:4599:15)
+    at D:\programing\Node\taskProject\node_modules\mongoose\lib\model.js:2804:20
+    at Array.map (<anonymous>)
+    at Function.create (D:\programing\Node\taskProject\node_modules\mongoose\lib\model.js:2792:34)
+    at exports.create (D:\programing\Node\taskProject\src\utils\dbOperations.js:14:18)
+
+
+Wed Nov 22 2023 13:52:14 GMT+0530 (India Standard Time)
+GET    => /get_category - 10 ms
+user: {}
+body: {}
+query: {}
+params: {}
+error: CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "category"
+    at SchemaObjectId.cast (D:\programing\Node\taskProject\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (D:\programing\Node\taskProject\node_modules\mongoose\lib\schemaType.js:1219:12)
+    at SchemaType.castForQuery (D:\programing\Node\taskProject\node_modules\mongoose\lib\schemaType.js:1631:15)
+    at cast (D:\programing\Node\taskProject\node_modules\mongoose\lib\cast.js:304:34)
+    at Query.cast (D:\programing\Node\taskProject\node_modules\mongoose\lib\query.js:4769:12)
+    at Query._castConditions (D:\programing\Node\taskProject\node_modules\mongoose\lib\query.js:2200:10)
+    at model.Query._find (D:\programing\Node\taskProject\node_modules\mongoose\lib\query.js:2226:8)
+    at model.Query.exec (D:\programing\Node\taskProject\node_modules\mongoose\lib\query.js:4291:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async exports.getCategory (D:\programing\Node\taskProject\src\admin\category\controllers.js:25:14)
+
+
+Wed Nov 22 2023 14:39:27 GMT+0530 (India Standard Time)
+POST   => /add_product - 82 ms
+user: {}
+body: {"price":"2000","productName":"Polo","category":"655db12a5344a61e39f3b356","image":"image-1700644167763-927059018f3.jpg"}
+query: {}
+params: {}
+error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\programing\Node\taskProject\node_modules\express\lib\response.js:1150:12)
+    at ServerResponse.json (D:\programing\Node\taskProject\node_modules\express\lib\response.js:271:14)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:9:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 15:16:17 GMT+0530 (India Standard Time)
+GET    => /get_product - 7 ms
+user: {}
+body: {}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'image')
+    at exports.fixLink (D:\programing\Node\taskProject\src\utils\fileUploader.js:37:31)
+    at exports.getProduct (D:\programing\Node\taskProject\src\admin\product\controllers.js:29:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Wed Nov 22 2023 15:16:49 GMT+0530 (India Standard Time)
+GET    => /get_product - 14 ms
+user: {}
+body: {}
+query: {}
+params: {}
+error: ReferenceError: productList is not defined
+    at exports.getProduct (D:\programing\Node\taskProject\src\admin\product\controllers.js:33:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Wed Nov 22 2023 15:17:30 GMT+0530 (India Standard Time)
+GET    => /get_product - 33 ms
+user: {}
+body: {}
+query: {}
+params: {}
+error: ReferenceError: productList is not defined
+    at exports.getProduct (D:\programing\Node\taskProject\src\admin\product\controllers.js:33:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Wed Nov 22 2023 17:01:43 GMT+0530 (India Standard Time)
+GET    => /product_list - 3 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'find')
+    at exports.find (D:\programing\Node\taskProject\src\utils\dbOperations.js:2:18)
+    at exports.productList (D:\programing\Node\taskProject\src\api\product\controllers.js:4:25)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 17:12:40 GMT+0530 (India Standard Time)
+GET    => /product_list - 2 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'find')
+    at exports.find (D:\programing\Node\taskProject\src\utils\dbOperations.js:2:18)
+    at exports.productList (D:\programing\Node\taskProject\src\api\product\controllers.js:4:25)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 17:13:59 GMT+0530 (India Standard Time)
+GET    => /product_list - 3 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'find')
+    at exports.find (D:\programing\Node\taskProject\src\utils\dbOperations.js:2:18)
+    at exports.productList (D:\programing\Node\taskProject\src\api\product\controllers.js:4:25)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 17:16:16 GMT+0530 (India Standard Time)
+GET    => /product_list - 12 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'find')
+    at exports.productList (D:\programing\Node\taskProject\src\api\product\controllers.js:4:39)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 17:39:33 GMT+0530 (India Standard Time)
+GET    => /product_list - 17 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+error: ReferenceError: root is not defined
+    at exports.productList (D:\programing\Node\taskProject\src\api\Product\controllers.js:41:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Wed Nov 22 2023 17:56:17 GMT+0530 (India Standard Time)
+GET    => /product_list - 15 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'statusCode')
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 17:59:07 GMT+0530 (India Standard Time)
+GET    => /product_list - 14 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {}
+query: {}
+params: {}
+error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+    at exports.productSer (D:\programing\Node\taskProject\src\api\Product\services.js:11:28)
+    at exports.productList (D:\programing\Node\taskProject\src\api\Product\controllers.js:5:29)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 18:18:25 GMT+0530 (India Standard Time)
+POST   => /add_to_cart - 1 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+error: ReferenceError: req is not defined
+    at exports.addToCart (D:\programing\Node\taskProject\src\api\cart\controllers.js:5:54)
+    at D:\programing\Node\taskProject\src\utils\responseHandler.js:8:55
+    at Layer.handle [as handle_request] (D:\programing\Node\taskProject\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\programing\Node\taskProject\node_modules\express\lib\router\route.js:144:13)
+    at module.exports (D:\programing\Node\taskProject\src\utils\apiAuth.js:10:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+Wed Nov 22 2023 18:20:01 GMT+0530 (India Standard Time)
+POST   => /add_to_cart - 6 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'findOne')
+    at exports.findOne (D:\programing\Node\taskProject\src\utils\dbOperations.js:6:18)
+    at exports.addToCart (D:\programing\Node\taskProject\src\api\cart\controllers.js:15:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
+Wed Nov 22 2023 18:22:25 GMT+0530 (India Standard Time)
+POST   => /add_to_cart - 6 ms
+user: {"_id":"655d92f7359aec52a40568be","name":"sunil","phone":8947027673,"password":"$2a$10$d1bsJ5/PAPmzUuTyazraoeOBIXPhyx3KqybPo5uDFPfHPOSar685G","otpVerify":false,"isDeleted":false,"createdAt":"2023-11-22T05:34:47.088Z","updatedAt":"2023-11-22T11:29:30.838Z","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTVkOTJmNzM1OWFlYzUyYTQwNTY4YmUiLCJpYXQiOjE3MDA2NTI1NzB9.09yKEJz0VR_Trcq63XmExLIY7hEQ1l-F86tseJnpD3s"}
+body: {"itemId":"655dcd7be2ecf51b7c5e8ab2"}
+query: {}
+params: {}
+error: TypeError: Cannot read properties of undefined (reading 'findOne')
+    at exports.findOne (D:\programing\Node\taskProject\src\utils\dbOperations.js:6:18)
+    at exports.addToCart (D:\programing\Node\taskProject\src\api\cart\controllers.js:15:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\programing\Node\taskProject\src\utils\responseHandler.js:8:49
+
+
